@@ -201,8 +201,8 @@
 
 			// Will resize to this dimensions.
 			// Use explicit dimensions when specified
-			var maxHeight = Opts.explicitHeight || $(this).height();
-			var maxWidth  = Opts.explicitWidth  || $(this).width();
+			var maxHeight = Opts.explicitHeight || parseInt($(this).get(0).style.height);
+			var maxWidth  = Opts.explicitWidth  || parseInt($(this).get(0).style.width);
 
 			var oldFontSize = ourText.css('font-size');
 
